@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    button {
+        border: 3px solid black;
+        padding: 10px;
+        margin: 10px;
+        font-size: 40px;
+        background-color: darkgray;
+    }
+    p {
+        font-size: 50px;
+    }
+</style>
+</head>
+<body>
+    <p class="c1">Vanshika gupta</p>
+    <button onclick="changeColor('green', 'red')">Red</button>
+    <button onclick="changeColor('blue', 'green')">Green</button>
+    <button onclick="changeColor('yellow', 'blue')">Blue</button>
+    <button onclick="changeColor('grey', 'yellow')">Yellow</button>
+    <button onclick="changeColor('red', 'grey')">Grey</button>
+
+    <script>
+        function changeColor(textColor, borderColor) {
+            let element = document.querySelector('.c1');
+            element.style.color = textColor;
+            element.style.border = `10px solid ${borderColor}`;
+        }
+    </script>
+</body>
+</html>

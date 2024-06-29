@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Using alert box
+function showAlert() {
+    alert("Hello! This is an alert box.");
+}
+
+// Using confirm box
+function showConfirm() {
+    const result = confirm("Do you want to proceed?");
+    if (result) {
+        alert("You clicked OK!");
+    } else {
+        alert("You clicked Cancel!");
+    }
+}
+
+// Using prompt box
+function showPrompt() {
+    const name = prompt("Please enter your name:", "John Doe");
+    if (name !== null) {
+        alert(`Hello, ${name}!`);
+    } else {
+        alert("You clicked Cancel or closed the prompt.");
+    }
+}
+
+// Example usage
+showAlert(); // Displays an alert box with a message
+showConfirm(); // Displays a confirm box and shows an alert based on user's choice
+showPrompt(); // Displays a prompt box and greets the user with their entered name
+
+
+
+    </script>
+</body>
+</html>

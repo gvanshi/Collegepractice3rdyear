@@ -1,0 +1,43 @@
+<!-- Create a web page having 5 paragraphs and one button write a function 
+which fetch all text of 1st 4 paragraphs  and display it into 5th para
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="bootstrap-5.3.3-dist/css/bootstrap.css"rel="stylesheet">
+
+ </head>
+ <body>
+    <style>
+        p,input{
+            margin-left:100px;
+            align-items: center;
+        }
+    </style>
+     <p id="p1"> Hiii </p>
+     
+     
+     <p id="p3"> I</p>
+     <p id="p4"> am</p>
+     <p id="p5"> Vanshika Gupta</p>
+    
+ 
+     <input type="button" onclick="display()" value="Display" class="btn btn-outline-info col-md-2"/>
+ 
+     <p id="p2"></p>
+ 
+     <script>
+         function display() {
+             var para = document.getElementById("p1").innerHTML;
+             var para1 = document.getElementById("p3").innerHTML;
+             var para2 = document.getElementById("p4").innerHTML;
+             var para3 = document.getElementById("p5").innerHTML;
+             document.getElementById("p2").innerHTML = para + " "+para1+  " "+ para2+  " "+ para3;
+         }
+     </script>
+ </body>
+ </html>
+ 

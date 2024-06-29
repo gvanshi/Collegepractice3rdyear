@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.css"rel="stylesheet">
+    
+    <style>
+        button{
+         margin: 10px;
+        }
+        .p1{
+            color:blue;
+            background-color: aqua;
+            font-style: italic;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+border: 2px solid  blue;
+           
+        }
+        .p2{
+            color: brown;
+            background-color:bisque ;
+            border: 2px solid  pink;
+
+        }
+     
+         </style>
+</head>
+<body>
+    <!-- <button onclick="display()">Click me</button>
+    <button onclick="helloworld()">Get hello </button> -->
+    <button onclick="table(1)" type="button" class="btn btn-outline-primary">1</button>
+    <button onclick="table(2)" type="button" class="btn btn-outline-secondary">2</button>
+    <button onclick="table(3)"type="button" class="btn btn-outline-info">3</button>
+    <button onclick="table(4)"type="button" class="btn btn-outline-success">4</button>
+    <button onclick="table(5)"type="button" class="btn btn-outline-dark">5</button>
+    <button onclick="table(6)"type="button" class="btn btn-outline-warning">6</button>
+    <button onclick="greater()"type="button" class="btn btn-outline-danger">Check greater</button>
+<p class="p1">HIII This is mee vanshika</p>
+<p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam assumenda odio consequatur debitis modi nostrum eveniet, alias suscipit optio, amet libero excepturi. Molestias, officiis deserunt dolorum officia quisquam et sunt.</p>
+    <script>
+        // function display(){
+        //     let a,b;
+        // a=10;
+        // b=20;
+        // let c =a+b;
+        // console.log(c)
+        // alert(c);
+        // }
+
+        // function helloworld(){
+
+        //     alert("Hiii guyssss")
+        // }
+
+        function table(n){
+            for(let i =1;i<=10;i++){
+                console.log(n + " * " + i+" = "+n*i)
+            }
+        }
+        
+        function greater(){
+            let a =10;
+            let b =20;
+            if(a>b){
+                alert("a>b")
+            }else{
+                alert("a<b")
+            }
+        }
+    </script>
+
+    <p id="p1"> Hiiii</p>
+    <p id="p2"> Hiiii</p>
+    <button onclick="changetext()">Click me</button>
+    <script>
+        function changetext(){
+           let x= document.getElementById('p1')
+           x.innerText="hello"
+
+        //    let y=document.getElementById('p1');
+        //  console.log(typeof(y))
+           console.log(x.innerText)
+        }
+    </script>
+
+    
+  
+</body>
+</html>
+
+
+

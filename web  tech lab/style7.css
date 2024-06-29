@@ -1,0 +1,16 @@
+/* External CSS Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Set background image and properties */
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-repeat: repeat; /* Repeat the background image both horizontally and vertically */
+    background-size: cover; /* Cover the entire background area */
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
+}

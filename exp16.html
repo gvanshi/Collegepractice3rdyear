@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <div>
+
+        <input type="text" id="t2"  placeholder="Enter choice"/>
+        <button onclick="displaybt()" >Display button</button>
+        <table id="t1" border="1">
+            <tr>
+              <th>Name</th>
+    
+              <th>Branch</th>
+    
+              <th>Rollno</th>
+            </tr>
+          </table>
+
+        <p id ="t3"></p>
+    </div>
+    <script>
+
+let student = {
+        1: {
+          Name: "Ram",
+          Branch: "CSE",
+          Rollno: 123,
+        },
+        2: {
+          Name: "shyam",
+          Branch: "CSE",
+          Rollno: 123,
+        },
+        3: {
+          Name: "sonu",
+          Branch: "CSE",
+          Rollno: 123,
+        },
+        4: {
+          Name: "radha",
+          Branch: "CSE",
+          Rollno: 123,
+        },
+        5: {
+          Name: "sita",
+          Branch: "CSE",
+          Rollno: 123,
+        }
+      };
+
+
+      function displaybt(){
+let val=document.querySelector("#t2").value;
+if (student[val] !=undefined){
+
+    let row = document.createElement("tr");
+    
+document.querySelector("#t3").innerHTML=student[val]["Name"] + ' ' + student[val]["Branch"]  + ' ' + student[val]["Rollno"]   ;
+}else{
+    document.querySelector("#t3").innerHTML="Rollno not found";
+}
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to add two numbers using prompt boxes
+function addNumbers() {
+    // Prompt the user to enter the first number
+    const firstNumberInput = prompt("Enter the first number:");
+    
+    // Convert the input string to a number
+    const firstNumber = parseFloat(firstNumberInput);
+
+    // Prompt the user to enter the second number
+    const secondNumberInput = prompt("Enter the second number:");
+
+    // Convert the input string to a number
+    const secondNumber = parseFloat(secondNumberInput);
+
+    // Check if both inputs are valid numbers
+    if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
+        // Calculate the sum
+        const sum = firstNumber + secondNumber;
+
+        // Display the result using an alert box
+        alert(`The sum of ${firstNumber} and ${secondNumber} is: ${sum}`);
+    } else {
+        // Display an error message if inputs are not valid numbers
+        alert("Invalid input. Please enter valid numbers.");
+    }
+}
+
+// Call the function to add two numbers using prompt boxes
+addNumbers();
+
+    </script>
+</body>
+</html>

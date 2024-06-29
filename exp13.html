@@ -1,0 +1,39 @@
+<!-- Create a web page having 6 paragraphs 
+Craete a function which diasplay the content of C1 class on to conole as a string
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.css"rel="stylesheet">
+<style>
+        p{
+        font-size: 50px;
+       margin-left:20%;
+       margin-top: 30px;
+    }
+
+</style>
+</head>
+<body>
+    <p class="c1">Hiiii</p>
+    <p  class="c2">Mee</p>
+    <p class="c1">I</p>
+    <p class="c2">Gvaaa</p>
+    <p class="c1"> Vanshika </p>
+    <p class="c2">gupta</p>
+    <script>
+       sum="";
+        let elm1=document.querySelectorAll('.c1');
+         for(let c=0;c<elm1.length;c++){
+             sum=sum+elm1[c].innerText+ " " 
+         }
+         console.log(sum);
+       
+    </script>
+
+</body>
+</html>

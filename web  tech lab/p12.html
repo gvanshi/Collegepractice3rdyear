@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser History and DOM Manipulation</title>
+</head>
+<body>
+
+<button onclick="showHistory()">Show Browser History</button>
+
+<button onclick="manipulateDOM()">Manipulate DOM</button>
+
+<script>
+    function showHistory() {
+        const historyList = window.history; 
+
+        console.log("History length:", historyList.length);
+
+        for (let i = 0; i < historyList.length; i++) {
+            console.log(`History ${i + 1}: ${historyList[i]}`);
+        }
+    }
+
+    function manipulateDOM() {
+        const paragraph = document.createElement("p");
+
+        paragraph.textContent = "This is a new paragraph created using JavaScript!";
+
+        paragraph.style.color = "blue";
+        paragraph.style.fontFamily = "Arial";
+        paragraph.style.fontSize = "16px";
+
+        document.body.appendChild(paragraph);
+    }
+</script>
+
+</body>
+</html>
